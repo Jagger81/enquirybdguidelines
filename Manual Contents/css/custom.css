@@ -1,0 +1,166 @@
+
+body {
+	font-family: calibri;
+	background-color: light gray;
+  font-size: 16px;
+}
+
+hr{
+   border: 0.5px solid green;
+}
+
+/*Main Content///////////////////*/
+
+.container-topofpage{
+    padding: 80px 0 60px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: light gray;
+    color: gray;
+    text-align: center;
+    font-size: 32px;
+}
+
+.container{
+  text-align: justify;
+}
+
+.nav-pills{
+  margin-bottom: 30px;
+}
+
+.textmargin_rows{
+  margin-left: 20px;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.scroll-down-container{
+  margin-top: 20px;
+}
+
+.my-fluid-headings{
+    background-color: rgb(0,115,74);
+    padding:10px 0 10px 0px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Scroll Arrow Code//////*/
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-5em;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+
+
+/*Panel Settings//////*/
+.panel-success > .panel-heading {
+    background-color: rgb(0,115,74);
+    border-color: black;
+    color: white;
+}
+
+h2 .panel-sucess{
+  font-size: 38px;
+}
+
+/*FOOTER///////////////////*/
+
+.navbar-fixed-bottom {
+    padding: 0px 0 10px 0;
+    background-color: #35404f;
+    color: #878c94;
+}
+
+footer{
+  margin-top: 150px;
+}
+
+
+
+
+
+
+
+	
+
+

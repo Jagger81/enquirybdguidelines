@@ -1,0 +1,45 @@
+	
+body {
+  background: url("img/concern_logo.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	Font-family: calibri;
+	background-color: light gray;
+}
+
+hr{
+   border: 0.5px solid green;
+}
+
+/*FOOTER START///////////////////*/
+
+.container-landingpage{
+    padding: 40px 0 60px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: light gray;
+    color: #878c94;
+    text-decoration-style: bold;
+    text-align: center;
+}
+
+.navbar-fixed-bottom {
+    padding: 0px 0 10px 0;
+    background-color: #35404f;
+    color: #878c94;
+}
+
+
+
+
+
+
+
+	
+
+
