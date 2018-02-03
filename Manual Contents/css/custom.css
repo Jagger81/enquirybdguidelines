@@ -12,7 +12,7 @@ hr{
 /*Main Content///////////////////*/
 
 .container-topofpage{
-    padding: 80px 0 60px 20px;
+    padding: 70px 0 60px 20px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: light gray;
@@ -38,13 +38,31 @@ hr{
   padding-right: 0px;
 }
 
-.my-fluid-headings{
+.my-fluid-headings-top{
     background-color: rgb(0,115,74);
-    padding:10px 0 10px 0px;
+    padding:20px 0 10px 0px;
     margin-top: 100px;
     margin-bottom: 10px;
     text-align: center;
     color: white;
+}
+
+.my-fluid-headings{
+    background-color: rgb(0,115,74);
+    padding:20px 0 10px 0px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Styling for link to the top of the page (text removed, no longer required)//////*/
+.top_style{
+  text-align: center;
+}
+
+.top_style_a{
+  color: gray;
 }
 
 /*Scroll Arrow Code//////*/

@@ -15,7 +15,7 @@
     </style>
 	
 </head>
-<body>
+<body id="top">
     
     <!-- Begin page content -->
     <nav class="navbar navbar-default">
@@ -42,14 +42,15 @@
     <ul class="nav nav-pills nav-stacked">
     <li role="presentation" class="active"><a href="../User Guidelines.html">Main Page</a></li>
     <li role="presentation"><a target="_blank" href="file://10.1.0.172/SupplyChain/Enquiries">View File Location In Browser</a></li>
-    <li role="presentation"><a target="_blank" href="#">Open Intranet Page</a></li>
-    <li role="presentation"><a target="_blank" href="#">Open Intranet Page</a></li>
+    <li role="presentation"><a href="#link1">Understanding The Layout</a></li>
+    <li role="presentation"><a href="#link2">Adding A New Enquiry</a></li>
+    <li role="presentation"><a href="#link3">Entering Procurement Details</a></li>
     </ul>
             </div>
         
         <div class="row">
     		<div class="col-sm-6">
-    <p>The purpose of these user guidelines is to outline the functionality and use of the Procurement Enquiry Database.<br><br>This database is a system for recording the key details from each procurement, and attaching scanned copies of the full audit trail, as means of quickly being able to access historical procurement documentation for future reference - particularly during internal and external/donor audits.
+    <p>The purpose of these user guidelines is to outline the functionality and use of the Procurement Enquiry Database.<br><br>This database is a system for recording the key details from each procurement, and attaching scanned copies of the full audit trail, as a means of quickly being able to access historical procurement documentation for future reference - particularly during internal and external/donor audits.
     </p>
              </div>
         <div class="row">
@@ -64,16 +65,17 @@
     <!--Section 1 heading-->
     <div class="container-fluid">
     	<div class="row">
-        <div class="col-sm-12">
-        	<div class="my-fluid-headings">
+        <div class="col-sm-12" id="scroll location">
+        	<div class="my-fluid-headings-top" id="link1"> <!--section link-->
         	
-        	<section class="main" id="scroll location">
+        	<section class="main">
             <a class="arrow-wrap" href="#scroll location">
             <span class="arrow"></span>
             <!--<span class="hint">scroll</span>-->
             </a>
             </section>
-            <h2>Setting Up A New Enquiry</h2>
+            <img src="img/S1_Design.png" class="center-block img-responsive" alt="DB Design" width="20%" height="20%">
+            <h2>Understanding The Layout</h2>
             <p>Follow The Steps Below</p>
             </div>
         </div>
@@ -82,12 +84,12 @@
     <!--Section 1 heading-->
     
     <!--Start of Accordian Panel 1-->
-    <div class="panel group" id="accodrian">
+    <div class="panel group" id="accodrian1">
      <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseA1" data-parent="#accodrian">1. Open the Enquiry Database and Enable Content</a>
+             href="#collapseA1" data-parent="#accodrian1">1. Open the Enquiry Database and Enable Content</a>
          </h4>
        </div>
       <div id="collapseA1" class="panel-collapse collapse">
@@ -137,7 +139,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseA2" data-parent="#accodrian">2. What is HTML?</a>
+             href="#collapseA2" data-parent="#accodrian1">2. TBC</a>
          </h4>
        </div>
       <div id="collapseA2" class="panel-collapse collapse">
@@ -151,7 +153,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseA3" data-parent="#accodrian">3. What is CSS?</a>
+             href="#collapseA3" data-parent="#accodrian1">3. TBC</a>
          </h4>
         </div>
        <div id="collapseA3" class="panel-collapse collapse">
@@ -161,7 +163,14 @@
        </div>
       </div>
     </div>
-    <!--End of Accordian Panel 2-->
+    <!--End of Accordian Panel 1-->
+
+    <div> <!--Top of page link with inline css-->
+      <a href="#top">
+      <img src="img/top.png" class="center-block img-responsive" alt="Top Of Page" width="6%" height="6%">
+      </a>
+    </div>
+  
 
 
 
@@ -169,8 +178,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <div class="my-fluid-headings">
-            <h2>Entering Procurement Details</h2>
+          <div class="my-fluid-headings" id="link2"> <!--section link-->
+            <img src="img/S2_New.png" class="center-block img-responsive" alt="New Record" width="10%" height="10%">
+            <h2>Setting Up A New Enquiry</h2>
             <p>Follow The Steps Below</p>
             </div>
         </div>
@@ -180,12 +190,12 @@
 
 
       <!--Start of Accordian Panel 2-->
-    <div class="panel group" id="accodrian">
+    <div class="panel group" id="accodrian2">
      <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseB1" data-parent="#accodrian">1. Open the Enquiry Database and Enable Content</a>
+             href="#collapseB1" data-parent="#accodrian2">1. Open the Enquiry Database and Enable Content</a>
          </h4>
        </div>
       <div id="collapseB1" class="panel-collapse collapse">
@@ -235,7 +245,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseB2" data-parent="#accodrian">2. What is HTML?</a>
+             href="#collapseB2" data-parent="#accodrian2">2. Add New Enquiry (minimum info)</a>
          </h4>
        </div>
       <div id="collapseB2" class="panel-collapse collapse">
@@ -249,7 +259,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseB3" data-parent="#accodrian">3. What is CSS?</a>
+             href="#collapseB3" data-parent="#accodrian2">3. Set Up Corresponding Folder on Shared Drive</a>
          </h4>
         </div>
        <div id="collapseB3" class="panel-collapse collapse">
@@ -258,8 +268,134 @@
         </div>
        </div>
       </div>
+      
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseB4" data-parent="#accodrian2">4. Print Coverpage</a>
+         </h4>
+        </div>
+       <div id="collapseB4" class="panel-collapse collapse">
+        <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        </div>
+       </div>
+      </div>
+
     </div>
     <!--End of Accordian Panel 2-->
+
+    <div> <!--Top of page link with inline css-->
+      <a href="#top">
+      <img src="img/top.png" class="center-block img-responsive" alt="Top Of Page" width="6%" height="6%">
+      </a>
+    </div>
+
+
+    <!--Section 3 heading-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="my-fluid-headings" id="link3"> <!--section link-->
+            <img src="img/S3_Data_Entry.png" class="center-block img-responsive" alt="New Record" width="20%" height="20%">
+            <h2>Entering Procurement Details</h2>
+            <p>Follow The Steps Below</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Section 3 heading-->
+
+
+      <!--Start of Accordian Panel 3-->
+    <div class="panel group" id="accodrian3">
+     <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseC1" data-parent="#accodrian3">1. Open the Enquiry Database and Enable Content</a>
+         </h4>
+       </div>
+      <div id="collapseC1" class="panel-collapse collapse">
+       <div class="panel-body">
+       
+       <!--Start of grid within panel 3-->  
+       <div class="row">
+       <div class="col-sm-4">
+       <h2>HTML</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-success btn-lg">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>CSS</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-primary btn-default">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>Bootstrap</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-danger btn-sm">Learn</a>
+       </div>
+       </div>
+       <!--End of grid within panel 3-->
+
+       </div>
+      </div>
+     </div>
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseC2" data-parent="#accodrian3">2. What is HTML?</a>
+         </h4>
+       </div>
+      <div id="collapseC2" class="panel-collapse collapse">
+       <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+       </div>
+      </div>
+     </div>
+  
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseC3" data-parent="#accodrian3">3. What is CSS?</a>
+         </h4>
+        </div>
+       <div id="collapseC3" class="panel-collapse collapse">
+        <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!--End of Accordian Panel 3-->
+
+  <div> <!--Top of page link with inline css-->
+      <a href="#top">
+      <img src="img/top.png" class="center-block img-responsive" alt="Top Of Page" width="6%" height="6%">
+      </a>
+    </div>
+
 
 	<!-- Footer Content -->
 	<footer>
