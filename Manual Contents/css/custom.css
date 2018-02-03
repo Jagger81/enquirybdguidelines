@@ -12,7 +12,7 @@ hr{
 /*Main Content///////////////////*/
 
 .container-topofpage{
-    padding: 70px 0 60px 20px;
+    padding: 40px 0 60px 20px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: light gray;
@@ -21,8 +21,12 @@ hr{
     font-size: 32px;
 }
 
-.container{
+.container-header{
   text-align: justify;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 15px 20px 0px 20px;
+  background-color: rgb(248, 248, 248);
 }
 
 .nav-pills{
@@ -40,7 +44,7 @@ hr{
 
 .my-fluid-headings-top{
     background-color: rgb(0,115,74);
-    padding:20px 0 10px 0px;
+    padding:20px 0px 10px 0px;
     margin-top: 100px;
     margin-bottom: 10px;
     text-align: center;
@@ -156,7 +160,7 @@ hr{
 /*FOOTER///////////////////*/
 
 .navbar-fixed-bottom {
-    padding: 0px 0 10px 0;
+    padding: 0px 0 5px 0;
     background-color: #35404f;
     color: #878c94;
 }
