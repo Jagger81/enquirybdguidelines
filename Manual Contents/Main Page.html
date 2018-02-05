@@ -218,6 +218,7 @@
 
        </div>
       </div>
+    </div>
 
 
     </div>
@@ -253,7 +254,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseB1" data-parent="#accodrian2">1. Open the Enquiry Database and Enable Content</a>
+             href="#collapseB1" data-parent="#accodrian2">1. How To Open A New Enquiry</a>
          </h4>
        </div>
       <div id="collapseB1" class="panel-collapse collapse">
@@ -261,37 +262,24 @@
        
        <!--Start of grid within panel 2-->  
        <div class="row">
-       <div class="col-sm-4">
-       <h2>HTML</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-success btn-lg">Learn</a>
+       <div class="col-sm-3">
+       <p>At the top of the <kbd>Enquiry Coverpage</kbd> you will see a number of icons (which are explained in detail later on). When you hover over these buttons, text will appear to tell you what each button does.</p>
        </div>
 
-       <div class="col-sm-4">
-       <h2>CSS</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-primary btn-default">Learn</a>
+       <div class="col-sm-6">
+       <img src="img/screenshots/EnquiryTopBar.png" class="center-block img-responsive" alt="New Record" width="90%" height="90%">
        </div>
 
-       <div class="col-sm-4">
-       <h2>Bootstrap</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-danger btn-sm">Learn</a>
+       <div class="col-sm-3">
+       <p>To <kbd class="label-default">Add A New Enquiry</kbd> click the one on the left (icon of a document with a "+" sign). </p>
+       <img src="img/screenshots/NewRecord.png" class="center-block img-responsive" alt="New Record" width="15%" height="15%">
+       </div>
+       </div>
+
+       <div class="row">
+       <div class="col-sm-12">
+       <br><br>
+       <p>The database is designed so that the "Enquiry No:" field will <abbr title="Increase by one each time, whereby the number is unique and cannot be used again">automatically incremement</abbr> each time a new enquiry/record is created.  In the screenshot above, the Enquiry No is 6931 - if we created a New Enquiry now, the number would be 6932, and so on.</p>
        </div>
        </div>
        <!--End of grid within panel 2-->
@@ -299,6 +287,7 @@
        </div>
       </div>
      </div>
+
       <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title" id="locationA3-1">
@@ -308,7 +297,41 @@
        </div>
       <div id="collapseB2" class="panel-collapse collapse">
        <div class="panel-body"> <!--link used in button above, collapse section A3-->
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        <!--Start of grid within panel 2-->  
+       <div class="row">
+       <div class="col-sm-3">
+       <p>The minimum data that should be entered when setting up a new enquiry is the following:<br><br>
+       - Enquiry No (automated)<br>
+       - Country (dropdown list)<br>
+       - <kbd>Responsibility</kbd> (dropdown list)<br><br>
+       Responsibilty is a <abbr title="Must be completed or else the record cannot be saved">mandatory</abbr> field</p>
+       </div>
+
+       <div class="col-sm-6">
+       <img src="img/screenshots/MinData.png" class="center-block img-responsive" alt="New Record" width="90%" height="90%">
+       </div>
+
+       <div class="col-sm-3">
+       <p>The following data should be entered if known at this stage:<br><br>
+       - SR No (unless is it "Quote Only" at this stage)<br>
+       - Date Received<br>
+       - Donor (can type more than one)<br>
+       - Description<br>
+       - Status (default "No Action Taken")
+       </p>
+       </div>
+       </div>
+
+       <div class="row">
+       <div class="col-sm-12">
+       <br><br>
+       <p>For the <kbd>Description</kbd> field, this is only meant to be a general and brief description of the items.  For example, if buying pharmaceuticals, then rather than listing each drug, "Pharmaceuticals" would suffice.  (The same way the above example does not list all of the consumables).  <kbd>Comments</kbd> can also be added at this stage if desired.</p>
+       <p>In Microsoft Access there is no need to <kbd class="label-default">Save</kbd> your progress.  Data and records are automatically saved when you move onto the next record / close the database.</p>
+       </div>
+       </div>
+       <!--End of grid within panel 2-->
+       
+
        </div>
       </div>
      </div>
@@ -322,11 +345,42 @@
         </div>
        <div id="collapseB3" class="panel-collapse collapse">
         <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        <div class="row">
+       <div class="col-sm-3">
+       <p>Now that we have entered the minimum data and have our New Eqnuiry set up, it is vitally important to set up a New Enquiry Folder on the shared drive.  This is where we will later archive our scanned documents and electronic paper trail.  The location on the server is as follows:<br><br>
+       \\10.1.0.172\SupplyChain\Enquiries/Country Folders (this not a link, but you can copy and paste)</p>
+       </div>
+
+       <div class="col-sm-3">
+       <p>To <kbd class="label-default">Open This Folder</kbd> from within the database click this icon (icon of a document with a "+" sign). </p>
+       <img src="img/screenshots/OpenCountryFolder.png" class="center-block img-responsive" alt="New Record" width="25%" height="25%">
+       <p>If a warning message appears, simply click <kbd class="label-default">"Yes"</kbd> </p>
+       <img src="img/screenshots/CountryFolderWarning.png" class="center-block img-responsive" alt="New Record" width="80%" height="80%">
+       </div>
+
+       <div class="col-sm-6">
+       <p>The following window should then open:</p>
+       <img src="img/screenshots/CountryFolders.png" class="center-block img-responsive" alt="New Record" width="94%" height="94%">
+       </div>
+       </div>
+
+       <div class="row">
+       <div class="col-sm-12">
+       <br><br>
+       <p>You will see that there a folder for each country.  If one does not exist for the country in question, then simply create a new one.  Within each folder there will be a corresponding folder for each existing enquiry (Starting with the pre-fix "Enq" and followed by the enquiry number.  Set up a new folder for the enquiry that you just created.</p>
+
+       <p>Once the folder is created, click in the top toolbar and copy the filepath.</p>
+
+       <p>Now return to the Enquiry Database and paste this filepath into the field labelled <abbr title ="Located in the grey area under the Comments box">Audit Trial - File Link.</abbr></p>
+       </div>
+       </div>
+  
         </div>
        </div>
       </div>
       
+
+
       <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
@@ -336,7 +390,14 @@
         </div>
        <div id="collapseB4" class="panel-collapse collapse">
         <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        <p>Once the minimum data has been entered and a corresponding folder has been set up in the Country Folders on the shared drive, you can now print off the coverpage.  It is extremely important that you do not use the general File > Print option (or "crtl+p") as this may inadvertently print ALL of the coverpages in the database, for each record, resulting in hundreds of pages being printed.</p><br>
+
+        <p>Instead, <kbd>ALWAYS</kbd> use the following icon to print: </p>
+        <img src="img/screenshots/PrintCoverPage.png" class="img-responsive" alt="Print Coverpage" width="5%" height="5%">
+
+        <p>This will result in "Selected Records" option being automatically selected for you: </p>
+        <img src="img/screenshots/PrintSelected.png" class="img-responsive" alt="Print Selected" width="35%" height="35%">
+
         </div>
        </div>
       </div>
@@ -561,7 +622,7 @@
 	<footer>
     <div class="navbar-fixed-bottom">
         <hr>
-        <div class="row text-center"> Created by Supply &amp; Logistics Unit Dublin</div>
+        <div class="row text-center"> Created by the Supply &amp; Logistics Unit Dublin</div>
         </div>
         
     </footer>
