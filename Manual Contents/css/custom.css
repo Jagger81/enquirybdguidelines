@@ -3,6 +3,7 @@ body {
 	font-family: calibri;
 	background-color: light gray;
   font-size: 16px;
+  text-align: justify;
 }
 
 hr{
@@ -152,6 +153,13 @@ hr{
 
 /*Panel Settings//////*/
 .panel-success > .panel-heading {
+    background-color: rgb(0,115,74);
+    border-color: black;
+    color: white;
+}
+
+/*Button Settings//////*/
+.btn-success{
     background-color: rgb(0,115,74);
     border-color: black;
     color: white;
