@@ -1,13 +1,5 @@
 	
 body {
-  background: url("img/concern_logo.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body {
 	Font-family: calibri;
 	background-color: light gray;
 }
@@ -26,6 +18,10 @@ hr{
     color: #878c94;
     text-decoration-style: bold;
     text-align: center;
+}
+
+.container{
+  padding-top: 25px;
 }
 
 .navbar-fixed-bottom {
