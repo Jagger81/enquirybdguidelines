@@ -151,7 +151,7 @@
     
       <div class="panel panel-success">
        <div class="panel-heading">
-         <h4 class="panel-title">
+         <h4 class="panel-title" id="MainOptions">
              <a data-toggle="collapse"
              href="#collapseA3" data-parent="#accodrian1">3. Main Options</a>
          </h4>
@@ -171,7 +171,7 @@
 
        <div class="col-sm-4">
        <p>Data Entry of procurement details is explained in more detail further down the page.</p><br><br>
-       <a href="#locationA3-1" class="btn btn-success btn-lg">Click This Button To Skip To That Section</a>
+       <a href="#link2" class="btn btn-success btn-lg">Click This Button To Skip To That Section</a>
        </div>
 
        </div>
@@ -191,7 +191,7 @@
 
        <div class="col-sm-4">
        <p>The SR Status Report is explained in more detail further down the page.</p><br><br>
-       <a href="#" class="btn btn-success btn-lg">Click This Button To Skip To That Section</a>
+       <a href="#link4" class="btn btn-success btn-lg">Click This Button To Skip To That Section</a>
        </div>
 
        </div>
@@ -221,7 +221,7 @@
 
        <div class="panel panel-success">
        <div class="panel-heading">
-         <h4 class="panel-title">
+         <h4 class="panel-title" id="DropDowns">
              <a data-toggle="collapse"
              href="#collapseA4" data-parent="#accodrian1">4. Pre-Reading (understanding general components and navigation)</a>
          </h4>
@@ -478,7 +478,7 @@
 
       <div class="panel panel-success">
        <div class="panel-heading">
-         <h4 class="panel-title" id="locationA3-1">
+         <h4 class="panel-title">
              <a data-toggle="collapse"
              href="#collapseB2" data-parent="#accodrian2">2. Add New Enquiry (minimum info)</a>
          </h4>
@@ -691,7 +691,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseC3" data-parent="#accodrian3">3. What is CSS?</a>
+             href="#collapseC3" data-parent="#accodrian3">3. Need for an additional section?....maybe not</a>
          </h4>
         </div>
        <div id="collapseC3" class="panel-collapse collapse">
@@ -738,39 +738,23 @@
        <div class="panel-body">
        
        <!--Start of grid within panel 4-->  
-       <div class="row">
-       <div class="col-sm-4">
-       <h2>HTML</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-success btn-lg">Learn</a>
+       <div class="row" id="StatusReport"> <!--link for sectoin above "Main Options"-->
+       <div class="col-sm-12">
+       <p>When the SR Status report is opened from the Enquiry Coverpage, using the following icon:</p>
+       <img src="img/screenshots/SRStatusReport.png" class="img-responsive" alt="SR Status Report" width="5%" height="5%"><br>
+
+       <p>The report can be either <kbd class="label-default">saved to file</kbd> or <kbd class="label-default">emailed</kbd> to the relevant field based staff memebers (e.g. SD's). You will see these two options at the top right hand corner of the report, to the left of the Concern logo:</p>
+       <img src="img/screenshots/TopOfStatusReport.png" class="img-responsive" alt="SR Status Report" width="70%" height="70%"><br><br>
        </div>
 
-       <div class="col-sm-4">
-       <h2>CSS</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-primary btn-default">Learn</a>
+       <hr>
+
+       <div class="col-sm-12">
+       <p>Alternatively, this can be done from the Main Menu and from within the Enquiry Coverpage, as detailed the sections above.  Click one of the buttons below to go to these sections:</p>
+       <a href="#MainOptions" class="btn btn-success btn-md">Main Options > Preview Open Enquiries Report</a>
+       <a href="#DropDowns" class="btn btn-success btn-md">Pre-Reading > General Navigation</a>
        </div>
 
-       <div class="col-sm-4">
-       <h2>Bootstrap</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <a href="#" class="btn btn-danger btn-sm">Learn</a>
-       </div>
        </div>
        <!--End of grid within panel 4-->
 
@@ -786,7 +770,62 @@
        </div>
       <div id="collapseD2" class="panel-collapse collapse">
        <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+
+       <div class="row">
+       <div class="col-sm-4">    
+       <p>The Supplier Report can be accessed through the Enquiry Coverpage by clicking the following icons, in this sequence:</p>
+       </div>
+
+       <div class="col-sm-4">
+       <img src="img/screenshots/NewSupplier.png" class="center-block img-responsive" alt="SR Status Report" width="15%" height="15%">
+       </div>
+       
+       <div class="col-sm-4">
+       <img src="img/screenshots/SupplierListButton.png" class="center-block img-responsive" alt="SR Status Report" width="60%" height="60%">
+       </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+       <div class="col-sm-10"><br>
+       <p>This will then open the the Supplier Form, from where you have the option of editing/adding data before running the report, by clicking this icon:</p>
+       </div>
+
+
+       <div class="col-sm-2">
+       <img src="img/screenshots/SRStatusReport.png" class="img-responsive" alt="SR Status Report" width="35%" height="35%">
+       </div>
+       </div>
+
+
+       <div class="row">
+       <div class="col-sm-12"><br>
+       <p>This will then open the full report, grouped by Supplier Category (e.g Comms, WASH, etc.)</p>
+       </div>
+       </div>
+
+
+       <div class="row">
+       <div class="col-sm-12"><br>
+       <img src="img/screenshots/SupplierReport.png" class="img-responsive" alt="SR Status Report" width="70%" height="70%">
+       </div>
+       </div>
+
+       <hr>
+       
+       <div class="row">
+       <div class="col-sm-12"><br>
+       <p>Alternative, this can be accessed from the Main Menu when you open the database, by going to the "Supplier Options" tab and hitting the button labelled <kbd class="label-default">See Full List Of Suppliers"</kbd>:</p>
+       </div>
+       </div>
+
+
+       <div class="row">
+       <div class="col-sm-12"><br>
+       <img src="img/screenshots/SupplierMainMenu.png" class="img-responsive" alt="SR Status Report" width="70%" height="70%">
+       </div>
+       </div>
        </div>
       </div>
      </div>
@@ -850,7 +889,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseD1" data-parent="#accodrian5">1. Printing Documents</a>
+             href="#collapseE1" data-parent="#accodrian5">1. Electronic Archives</a>
          </h4>
        </div>
       <div id="collapseE1" class="panel-collapse collapse">
@@ -896,35 +935,29 @@
        </div>
       </div>
      </div>
+
       <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseE2" data-parent="#accodrian5">2. What is HTML?</a>
+             href="#collapseE2" data-parent="#accodrian5">2. Manual Archives</a>
          </h4>
        </div>
-      <div id="collapseD2" class="panel-collapse collapse">
+      <div id="collapseE2" class="panel-collapse collapse">
        <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        <p>When the above steps have all been complete, it is important to still file the printed hard copies of the procurement documentation in case an auditor wishes to the <kbd class="label-default">orginally signed documents.</kbd></p>
+        <img src="img/archives.png" class="center-block img-responsive" alt="Reports" width="15%" height="15%"><br>
+        <p>All enquiries are currently filed in sequence by Enquiy No, with all documents pertaining to that procurement stapled and filed together (no need to seperate SR's, PO's, etc. as everything is searchable in the Enquiry Database and can be located using the relevant Enquiry No as your main refernence.</p><br><br>
+        <p>All enquiry folders are <kbd class="label-default">safely locked away</kbd> in the Supply &amp Logistics Unit store and should only be accessed by the <kbd class="label-default">designated storekeeper</kbd>.</p>
+        <img src="img/lock.png" class="center-block img-responsive" alt="Reports" width="20%" height="20%">
        </div>
       </div>
      </div>
-  
-      <div class="panel panel-success">
-       <div class="panel-heading">
-         <h4 class="panel-title">
-             <a data-toggle="collapse"
-             href="#collapseE3" data-parent="#accodrian5">3. What is CSS?</a>
-         </h4>
-        </div>
-       <div id="collapseE3" class="panel-collapse collapse">
-        <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
-        </div>
-       </div>
+
+     </div>
       </div>
-    </div>
-    <!--End of Accordian Panel 5-->
+     </div>
+  
 
   <div> <!--Top of page link with inline css-->
       <a href="#top">
