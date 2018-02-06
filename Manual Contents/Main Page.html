@@ -41,11 +41,11 @@
     		<div class="col-sm-3">
     <ul class="nav nav-pills nav-stacked">
     <li role="presentation" class="active"><a href="../User Guidelines.html">Main Page</a></li>
-    <li role="presentation"><a target="_blank" href="file://10.1.0.172/SupplyChain/Enquiries">View File Location In Browser</a></li>
     <li role="presentation"><a href="#link1">Understanding The Layout</a></li>
     <li role="presentation"><a href="#link2">Adding A New Enquiry</a></li>
     <li role="presentation"><a href="#link3">Entering Procurement Details</a></li>
-    <li role="presentation"><a href="#link4">Archiving</a></li>
+    <li role="presentation"><a href="#link4">General Reports</a></li>
+    <li role="presentation"><a href="#link5">Archiving</a></li>
     </ul>
             </div>
         
@@ -105,6 +105,9 @@
        <img src="img/screenshots/EnableContent.png" class="img-responsive" alt="DB Design" width="50%" height="50%">
        <br>
        <p>When you open the database you might be presented with a Security Warning message - if so, simply hit the <kbd class="label-default">Enable Content</kbd> button.  This may have to be performed <kbd>every time</kbd> you open the Enquiries Database.</p>
+       <p>It is important to remember that <u>the database can only be accessed and edited by one user at a time</u>.  If you try to open the database when another use is currently using it then you be notified with the following message:</p><br>
+       <img src="img/screenshots/NoAccess.png" class="img-responsive" alt="DB Design" width="50%" height="50%"><br>
+        <p>If this message appears it is best to wait until the other user is finished working on it, to avoid inadvertent loss of data - or alternatively request that they close the database to allow you to gain full access.</p>
        </div>
        </div>
        <!--End of grid within panel 1-->
@@ -618,7 +621,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseC1" data-parent="#accodrian3">1. Pre-Reading (understanding the components and navigation of coverpage)</a>
+             href="#collapseC1" data-parent="#accodrian3">1. Entering / Editing Data</a>
          </h4>
        </div>
       <div id="collapseC1" class="panel-collapse collapse">
@@ -627,8 +630,38 @@
        <!--Start of grid within panel 3-->  
        <div class="row">
        <div class="col-sm-12">
-       <p>test</p>    
+       <p>Whether editing an existing Enquiry and entering new data, the Enquiry Coverpage is broken into two main sections:</p><br><br>
        </div>
+       </div>
+
+       <div class="row">
+       <div class="col-sm-6">
+       <h3>Activity/Requisistion Details</h3><br>
+       <img src="img/screenshots/ActivitySection.png" class="img-responsive" alt="New Record" width="100%" height="100%">
+       <p style="font-size: 14px">The PDF Attachment section is detailed below under "Archiving"</p><br><br>
+       </div>
+       
+       <div class="col-sm-6"><br>
+       <p>This section includes the general info for the requistion and contains the minimum data required when setting up a new enquiry.  However, it is important to note the following two checkboxes:<br><br>
+        - <b>Marine Insurance</b> (to be ticked to be included in the marine insurance data export. Linked to this is the <kbd class="label-default">Insured Value</kbd> (explained below)<br><br>
+        - <b>Complete</b> (to be ticked when Enquiry is complete/closed. All incomplete enquiries will appear on the SR Status report)
+       </p>
+       </div>
+       </div>
+
+       <hr>
+
+       <div class="row">
+       <div class="col-sm-6">
+       <h3>Procurement Details</h3><br>
+       <img src="img/screenshots/ProcurementSection.png" class="img-responsive" alt="New Record" width="100%" height="100%">
+       </div>
+       
+       <div class="col-sm-6"><br>
+       <p>This section includes info pertaining to the purchase of the items (supplier details, PO and Invoice details, etc.), as well as a link to the Audit Trail folder. It is important to note the following two checkboxes:<br><br>
+        - <b>Eligible For VAT Reclaim</b> (to be ticked to be included in the VAT Reclaim data export.<br><br>
+        - <b>Sent For Payment</b> (to be ticked to indicate that the goods have been receipted in Micorsoft Great Plains)
+       </p>  </div>
        </div>
 
        
@@ -640,12 +673,16 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseC2" data-parent="#accodrian3">2. What is HTML?</a>
+             href="#collapseC2" data-parent="#accodrian3">2. Suppplier Database</a>
          </h4>
        </div>
       <div id="collapseC2" class="panel-collapse collapse">
        <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        <p>In the "Procurement Details" section mentioned above, you'll notce that the Supplier field is a dropdown menu. It has been explained in the above section on "pre-reading" how to add and edit supplier details throught the Supplier Form.</p>
+        <p>However, the user can also see the full list of suppliers and print a report by selecting the following icon on this form.</p>
+        <img src="img/screenshots/SupplierListButton.png" class="img-responsive" alt="New Record" width="20%" height="20%"><br>
+        <p>This will open up the following form, from where you can edit supplier details or add new supplier details</p><br>
+         <img src="img/screenshots/SupplierListView.png" class="img-responsive" alt="New Record" width="80%" height="80%"><br>
        </div>
       </div>
      </div>
@@ -678,8 +715,8 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="my-fluid-headings" id="link4"> <!--section link-->
-            <img src="img/S4_Archiving.png" class="center-block img-responsive" alt="New Record" width="20%" height="20%">
-            <h2>Archiving (Electronic &amp Manual)</h2>
+            <img src="img/S4_Reports.png" class="center-block img-responsive" alt="New Record" width="15%" height="15%">
+            <h2>General Reports</h2>
             <p>Follow The Steps Below</p>
             </div>
         </div>
@@ -694,7 +731,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseD1" data-parent="#accodrian4">1. Pre-Reading (understanding the components)</a>
+             href="#collapseD1" data-parent="#accodrian4">1. SR Status Report</a>
          </h4>
        </div>
       <div id="collapseD1" class="panel-collapse collapse">
@@ -744,7 +781,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseD2" data-parent="#accodrian4">2. What is HTML?</a>
+             href="#collapseD2" data-parent="#accodrian4">2. Supplier Report (Full)</a>
          </h4>
        </div>
       <div id="collapseD2" class="panel-collapse collapse">
@@ -758,7 +795,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseD3" data-parent="#accodrian4">3. What is CSS?</a>
+             href="#collapseD3" data-parent="#accodrian4">3. Marine Insurance Report</a>
          </h4>
         </div>
        <div id="collapseD3" class="panel-collapse collapse">
@@ -767,8 +804,127 @@
         </div>
        </div>
       </div>
+
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseD4" data-parent="#accodrian4">4. VAT Reclaim Report</a>
+         </h4>
+        </div>
+       <div id="collapseD4" class="panel-collapse collapse">
+        <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        </div>
+       </div>
+      </div>
+
     </div>
     <!--End of Accordian Panel 4-->
+
+  <div> <!--Top of page link with inline css-->
+      <a href="#top">
+      <img src="img/top.png" class="center-block img-responsive" alt="Top Of Page" width="6%" height="6%">
+      </a>
+    </div>
+
+
+  <!--Section 5 heading-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="my-fluid-headings" id="link5"> <!--section link-->
+            <img src="img/S5_Archiving.png" class="center-block img-responsive" alt="Reports" width="20%" height="20%">
+            <h2>Archiving (Electronic &amp Manual)</h2>
+            <p>Follow The Steps Below</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Section 5 heading-->
+
+
+      <!--Start of Accordian Panel 5-->
+    <div class="panel group" id="accodrian5">
+     <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseD1" data-parent="#accodrian5">1. Printing Documents</a>
+         </h4>
+       </div>
+      <div id="collapseE1" class="panel-collapse collapse">
+       <div class="panel-body">
+       
+       <!--Start of grid within panel 5-->  
+       <div class="row">
+       <div class="col-sm-4">
+       <h2>HTML</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation <kbd>ullamco</kbd> laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-success btn-lg">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>CSS</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-primary btn-default">Learn</a>
+       </div>
+
+       <div class="col-sm-4">
+       <h2>Bootstrap</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <a href="#" class="btn btn-danger btn-sm">Learn</a>
+       </div>
+       </div>
+       <!--End of grid within panel 5-->
+
+       </div>
+      </div>
+     </div>
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseE2" data-parent="#accodrian5">2. What is HTML?</a>
+         </h4>
+       </div>
+      <div id="collapseD2" class="panel-collapse collapse">
+       <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+       </div>
+      </div>
+     </div>
+  
+      <div class="panel panel-success">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseE3" data-parent="#accodrian5">3. What is CSS?</a>
+         </h4>
+        </div>
+       <div id="collapseE3" class="panel-collapse collapse">
+        <div class="panel-body">
+        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <!--End of Accordian Panel 5-->
 
   <div> <!--Top of page link with inline css-->
       <a href="#top">
