@@ -584,7 +584,7 @@
 
        <p>Once the folder is created, click in the top toolbar and copy the filepath.</p>
 
-       <p>Now return to the Enquiry Database and paste this filepath into the field labelled <abbr title ="Located in the grey area under the Comments box">Audit Trial - File Link.</abbr></p>
+       <p>Now return to the Enquiry Database and paste this filepath into the field labelled <abbr title ="Located in the grey area above the Status box">Audit Trial - File Link.</abbr></p>
        </div>
        </div>
   
@@ -663,13 +663,13 @@
        <div class="col-sm-6">
        <h3>Activity/Requisistion Details</h3><br>
        <img src="img/screenshots/ActivitySection.png" class="img-responsive" alt="New Record" width="100%" height="100%">
-       <p style="font-size: 14px">The PDF Attachment section is detailed below under "Archiving"</p><br><br>
+       <p style="font-size: 14px">The PDF Attachment section is detailed below under "Electronic Archives"</p><br><br>
        </div>
        
        <div class="col-sm-6"><br>
-       <p>This section includes the general info for the requistion and contains the minimum data required when setting up a new enquiry.  However, it is important to note the following two checkboxes:<br><br>
-        - <b>Marine Insurance</b> (to be ticked to be included in the marine insurance data export. Linked to this is the <kbd class="label-default">Insured Value</kbd> (explained below)<br><br>
-        - <b>Complete</b> (to be ticked when Enquiry is complete/closed. All incomplete enquiries will appear on the SR Status report)
+       <p>This section includes the general info for the requistion and contains the minimum data required when setting up a new enquiry.  However, it is important to note the following two ares:<br><br>
+        - <b>Complete</b> (to be ticked when Enquiry is complete/closed. All incomplete enquiries will appear on the SR Status report)<br><br>
+        - <b>Audit Trail</b> - File Link: Paste the filepath for the location of the corresponding Enq Folder on the shared drive.
        </p>
        </div>
        </div>
@@ -683,12 +683,44 @@
        </div>
        
        <div class="col-sm-6"><br>
-       <p>This section includes info pertaining to the purchase of the items (supplier details, PO and Invoice details, etc.), as well as a link to the Audit Trail folder. It is important to note the following two checkboxes:<br><br>
-        - <b>Eligible For VAT Reclaim</b> (to be ticked to be included in the VAT Reclaim data export.<br><br>
+       <p>This section includes info pertaining to the purchase of the items (supplier details, PO and Invoice details, etc.), as well as a link to the Audit Trail folder. It is important to note the following checkboxes:<br><br>
+        - <b>Marine Insurance</b> (to be ticked to be included in the marine insurance data export. (explained below)<br><br>
+        - <b>Eligible For VAT Reclaim</b> (to be ticked to be included in the VAT Reclaim data export).<br><br>
         - <b>Sent For Payment</b> (to be ticked to indicate that the goods have been receipted in Micorsoft Great Plains)
-       </p>  </div>
+       </p>  
+       </div>
        </div>
 
+       <hr>
+
+       <h4>Marine Insurance Details</h4><br>
+       <div class="row">
+       <div class="col-sm-6">
+       <img src="img/screenshots/MarineDetails.png" class="img-responsive" alt="New Record" width="100%" height="100%">
+       <br>
+       <p>This section includes info pertaining to marine insurance details. To be sure that the item will be included in the Marince Insurance Export (see Reports section below on how to run the export) the box on the far-left should be ticked.<br><br>
+       Next the value should be entered, followed by the Origin (which can be obtained from the shipping docs) and lastly the Mode of Transport (dropdown menu).
+       </p>  
+       </div>
+       
+       <div class="col-sm-6">
+       <div class="panel panel-primary">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseI1" data-parent="#accodrian4">Remember</a>
+         </h4>
+        </div>
+       <div id="collapseI1" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <p>For the <kbd>Insured Value</kbd> the user can simply copy and paste the PO Value, but this deliberately does not defaul to this value, as there will be times when the Insured Value differs from the purchase value (e.g. For IT Shipments we generally only place a PO for freight costs, where the insured value should be that of the goods)</p>
+        <img src="img/screenshots/POvalue-V-InsuredValue.png" class="img-responsive" alt="Vat Reclaim TickBox" width="70%" height="70%">
+        </div>
+
+       </div>
+       </div>
+       </div>
+       </div>
        
        </div>
       </div>
@@ -712,19 +744,6 @@
       </div>
      </div>
   
-      <div class="panel panel-success">
-       <div class="panel-heading">
-         <h4 class="panel-title">
-             <a data-toggle="collapse"
-             href="#collapseC3" data-parent="#accodrian3">3. Need for an additional section?....maybe not</a>
-         </h4>
-        </div>
-       <div id="collapseC3" class="panel-collapse collapse">
-        <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
-        </div>
-       </div>
-      </div>
 
     </div>
     <!--End of Accordian Panel 3-->
@@ -955,6 +974,18 @@
 
         </div></div></div></div>
 
+        <hr>
+
+       <div class="row">
+       <div class="col-sm-6">
+       <p>When you run the above report you will be asked to enter a year. This will generally be the current year.  The report is set up so that it will only capture anything up the 31st May of the year entered. (e.g. if you're running 2017-2018 report then best to wait until June 2018 to run the report).</p><br>
+       </div>
+
+       <div class="col-sm-6">
+       <img src="img/screenshots/WhatYear.png" class="img-responsive" alt="SR Status Report" width="50%" height="50%">
+       </div>
+       </div>
+
        <hr>
 
        <div class="row">
@@ -989,7 +1020,30 @@
         </div>
        <div id="collapseD5" class="panel-collapse collapse">
         <div class="panel-body">
-        <p>Instructions to go here - is it possible to use grid layout within the body?.</p>
+        
+        <div class="row">
+       <div class="col-sm-6">
+       <h3>Running The VAT Reclaim Export</h3> 
+       <img src="img/screenshots/RunTaxExport.png" class="img-responsive" alt="SR Status Report" width="50%" height="50%"><br>
+       <p>Run the export by hitting the above button on the main Reporting Options tab in the Main Menu. (see the message to the right containing important information).</p><br>
+       </div>
+       
+       <div class="col-sm-6">
+       <div class="panel panel-primary">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+             <a data-toggle="collapse"
+             href="#collapseI1" data-parent="#accodrian4">General Information</a>
+         </h4>
+        </div>
+       <div id="collapseI1" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <p>This process will be lead by Finance and we will usually only be consulted with when required.  Usually when shipping documents (proof of shipment/reciept) are needed.  However, it is good practice to run an export between the relevant dates as a comparative list, as this may increase the potential value of our VAT Reclaim.</p>
+        <img src="img/screenshots/VatReclaimBox.png" class="img-responsive" alt="Vat Reclaim TickBox" width="40%" height="40%">
+        </div>
+
+        </div></div></div></div>
+
         </div>
        </div>
       </div>
