@@ -561,7 +561,7 @@
         <div class="row">
        <div class="col-sm-3">
        <p>Now that we have entered the minimum data and have our New Eqnuiry set up, it is vitally important to set up a New Enquiry Folder on the shared drive.  This is where we will later archive our scanned documents and electronic paper trail.  The location on the server is as follows:<br><br>
-       \\10.1.0.172\SupplyChain\Enquiries/Country Folders (this not a link, but you can copy and paste)</p>
+       <kbd>\\10.1.0.172\SupplyChain\Enquiries\<br>CountryFolders</kbd> (this not a link, but you can copy and paste)</p>
        </div>
 
        <div class="col-sm-3">
@@ -573,7 +573,7 @@
 
        <div class="col-sm-6">
        <p>The following window should then open:</p>
-       <img src="img/screenshots/CountryFolders.png" class="center-block img-responsive" alt="New Record" width="94%" height="94%">
+       <img src="img/screenshots/CountryFolders.png" class="img-responsive" alt="New Record" width="94%" height="94%">
        </div>
        </div>
 
@@ -698,8 +698,8 @@
        <div class="col-sm-6">
        <img src="img/screenshots/MarineDetails.png" class="img-responsive" alt="New Record" width="100%" height="100%">
        <br>
-       <p>This section includes info pertaining to marine insurance details. To be sure that the item will be included in the Marince Insurance Export (see Reports section below on how to run the export) the box on the far-left should be ticked.<br><br>
-       Next the value should be entered, followed by the Origin (which can be obtained from the shipping docs) and lastly the Mode of Transport (dropdown menu).
+       <p>This section includes info pertaining to marine insurance details. To be sure that the item will be included in the Marince Insurance Export the box on the far-left should be ticked.(see Reports section below on how to run the export)<br><br>
+       Next the value should be entered, followed by the Origin (which can be obtained from the shipping docs) and lastly the Mode of Transport (dropdown menu).<br><br>
        </p>  
        </div>
        
@@ -708,7 +708,7 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseI1" data-parent="#accodrian4">Remember</a>
+             href="#collapseI1">Remember</a>
          </h4>
         </div>
        <div id="collapseI1" class="panel-collapse collapse in">
@@ -719,6 +719,14 @@
 
        </div>
        </div>
+       </div>
+       </div>
+
+       <div class="row">
+       <div class="col-sm-12">
+       <br><br><p>
+       <kbd class="label-default">Only items shipped that have NOT been insured by the supplier/freight forwarder should be included in the Marine Insurance.</kbd>
+       </p>  
        </div>
        </div>
        
@@ -770,6 +778,7 @@
 
 
       <!--Start of Accordian Panel 4-->
+    <div class="panel group" id="accodrian4">
     <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
@@ -804,7 +813,6 @@
        </div>
       </div>
 
-    <div class="panel group" id="accodrian4">
      <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
@@ -940,12 +948,11 @@
       </div>
      </div>
   
-      <div class="panel group" id="accodrian4I">
       <div class="panel panel-success">
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseD4" data-parent="#accodrian4I">3. Marine Insurance Report</a>
+             href="#collapseD4" data-parent="#accodrian4">3. Marine Insurance Report</a>
          </h4>
         </div>
        <div id="collapseD4" class="panel-collapse collapse">
@@ -955,34 +962,41 @@
        <div class="col-sm-6">
        <h3>Running The Marine Insurance Export</h3> 
        <img src="img/screenshots/RunMarineExport.png" class="img-responsive" alt="SR Status Report" width="50%" height="50%"><br>
-       <p>Run the export by hitting the above button on the main Reporting Options tab in the Main Menu. (see the message to the right containing important information).</p><br>
+       <p>Run the export by hitting the above button on the main Reporting Options tab in the Main Menu. (see the message to the right containing important information).<br><br>
+       <kbd class="label-default">Only items shipped that have NOT been insured by the supplier/freight forwarder should be included in the Marine Insurance.</kbd>
+       </p> 
        </div>
        
-       <div class="col-sm-6">
+       <div class="col-sm-6"> 
        <div class="panel panel-primary">
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseI1" data-parent="#accodrian4">Important Information</a>
+             href="#collapseI2">Important Information</a>
          </h4>
         </div>
-       <div id="collapseI1" class="panel-collapse collapse in">
+        <div id="collapseI2" class="panel-collapse collapse in">
         <div class="panel-body">
-        <p>Once you run the Marine Insurance export, the Enquiries Database is automatically updated.  This update sets the tickbox "Insured" to YES and cannot be changed by the user (can only be edited through the backend of the database with the correct user permissions)</p>
-        <img src="img/screenshots/MarineDetails.png" class="img-responsive" alt="SR Status Report" width="90%" height="90%">
+        <p>The export can be run as many times as required so it is important to check that you you have not inadvertantly included data from previous claims.  The below function allows you to enter the relevant dates of the current claim, so this should makes things easier.<br><br>
+        Finance will usually request the list to be sent on an annaul basis, running from 1st June to the 31st May (however, these dates could vary)</p>
         </div>
 
-        </div></div></div></div>
+        </div></div></div>
+		    </div>
 
         <hr>
 
        <div class="row">
        <div class="col-sm-6">
-       <p>When you run the above report you will be asked to enter a year. This will generally be the current year.  The report is set up so that it will only capture anything up the 31st May of the year entered. (e.g. if you're running 2017-2018 report then best to wait until June 2018 to run the report).</p><br>
+       <p>When you run the above report you will be asked to enter two dates. Firstly, the "Start Date" (e.g 01/06/17), followed by the "End Date" (e.g. 31/05/18). </p><br>
        </div>
 
-       <div class="col-sm-6">
-       <img src="img/screenshots/WhatYear.png" class="img-responsive" alt="SR Status Report" width="50%" height="50%">
+       <div class="col-sm-3">
+       <img src="img/screenshots/StartDate.png" class="img-responsive" alt="SR Status Report" width="80%" height="80%">
+       </div>
+
+       <div class="col-sm-3">
+       <img src="img/screenshots/EndDate.png" class="img-responsive" alt="SR Status Report" width="80%" height="80%">
        </div>
        </div>
 
@@ -1001,7 +1015,7 @@
        </div>
 
        <div class="col-sm-6"> 
-       <p>The export can be run as many times as reqired during the year, simply meaning that the user will need to copy and paste from each export into the main template.  With the main template, formulas are setup to calculate the conversion rates of all main currencies.  However, these will need to be set manually each year (bottom right hand corner of the excel sheet, cells L72 to O72):</p><br>
+       <p>The export can be run as many times as reqired during the year, simply meaning that the user will need to copy and paste from each export into the main template.  Within the main template, formulas are setup to calculate the conversion rates of all main currencies.  However, these will need to be set manually each year (bottom right hand corner of the excel sheet, cells L72 to O72):</p><br>
        <img src="img/screenshots/ConversionRates.png" class="img-responsive" alt="Conversion Rates" width="90%" height="90%">
        </div>
        </div>
@@ -1021,7 +1035,7 @@
        <div id="collapseD5" class="panel-collapse collapse">
         <div class="panel-body">
         
-        <div class="row">
+       <div class="row">
        <div class="col-sm-6">
        <h3>Running The VAT Reclaim Export</h3> 
        <img src="img/screenshots/RunTaxExport.png" class="img-responsive" alt="SR Status Report" width="50%" height="50%"><br>
@@ -1033,16 +1047,17 @@
        <div class="panel-heading">
          <h4 class="panel-title">
              <a data-toggle="collapse"
-             href="#collapseI1" data-parent="#accodrian4">General Information</a>
+             href="#collapseI3">General Information</a>
          </h4>
         </div>
-       <div id="collapseI1" class="panel-collapse collapse in">
+       <div id="collapseI3" class="panel-collapse collapse in">
         <div class="panel-body">
         <p>This process will be lead by Finance and we will usually only be consulted with when required.  Usually when shipping documents (proof of shipment/reciept) are needed.  However, it is good practice to run an export between the relevant dates as a comparative list, as this may increase the potential value of our VAT Reclaim.</p>
         <img src="img/screenshots/VatReclaimBox.png" class="img-responsive" alt="Vat Reclaim TickBox" width="40%" height="40%">
         </div>
 
-        </div></div></div></div>
+        </div></div></div>
+		    </div>
 
         </div>
        </div>
